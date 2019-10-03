@@ -1,0 +1,7 @@
+<form>
+    <input [(ngModel)]="cuentaOrigen" type="number" name="cuentaOrigen" />
+    <input [(ngModel)]="cuentaDestino" type="number" name="cuentaDestino" />
+    <input [(ngModel)]="fecha" type="datetime-local" name="fecha" />
+    <input [(ngModel)]="importe" type="number" step=".01" name="importe" />
+    <button (click)="transferir()">Transferir</button>
+</form>

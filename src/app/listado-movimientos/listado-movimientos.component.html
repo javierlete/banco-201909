@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Cuenta</th>
+            <th>Fecha</th>
+            <th>Importe</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movimiento of movimientos">
+            <td>{{movimiento.id}}</td>
+            <td>{{movimiento.cuenta}}</td>
+            <td>{{movimiento.fecha | date:'dd-MM-yyyy hh:mm:ss'}}</td>
+            <td style="text-align: right">{{movimiento.importe | number:'1.2-2'}} €</td>
+        </tr>
+    </tbody>
+</table>
